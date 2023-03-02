@@ -1,0 +1,19 @@
+<h1 id="tableLabel">Items</h1>
+
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="orders">
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.Item }}</td>
+      <td>{{ order.Article }}</td>
+      <td>{{ order.Amount }}</td>
+    </tr>
+  </tbody>
+</table>

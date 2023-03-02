@@ -1,0 +1,24 @@
+<mat-drawer-container class="example-container">
+  <img src="../assets/image.png" />
+  <ul class="navbar-nav flex-grow">
+    <li class="nav-item"
+        [routerLinkActive]="['link-active']"
+        [routerLinkActiveOptions]="{ exact: true }">
+      <a class="nav-link text-dark" [routerLink]="['/']">Orders</a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Items</a>
+    </li>
+  </ul>
+</mat-drawer-container>
+
+<!--<mat-drawer #drawer mode="side" disableClose="true" opened="true">
+  <mat-nav-list>
+    <mat-list-item>
+      <h4>Orders</h4>
+    </mat-list-item>
+    <mat-list-item>
+      <h4>Items</h4>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-drawer>-->
